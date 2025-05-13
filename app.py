@@ -40,7 +40,7 @@ AGENTS = [
     },
     {
         "name": "Supervisor",
-        "system": "You are a supervising educator. You will be given a conversation between a user (who is trying to teach a concept to a few AI agents) and the responses of those agents. Assess the performance of the user in accordance with the questions of the user. Generate a detailed report on the user's explanation. Highlight what was explained well, identify areas that need improvement, and suggest topics for further study. Do not ask additional questions or prompt the user for more information."
+        "system": "You are a supervising educator. You will be given a conversation between a user (who is trying to teach a concept to a few AI agents) and the responses of those agents. Assess the performance of the user in accordance with the questions of the user. Generate a detailed report on the user's explanation. Highlight what was explained well, identify areas that need improvement, and suggest topics for further study. Do not ask additional questions or prompt the user for more information. Also format your report with html tags like <h2> and <h3> and <p> tags for the headings and the text."
     },
 ]
 
@@ -99,10 +99,13 @@ def index():
 @app.route("/message", methods=["POST"])
 def message():
     user_text = request.json.get("text", "").strip()
-    reply = call_agent(user_message=user_text)
     current_agent = AGENTS[session["agent_index"]]["name"]
+    reply = call_agent(user_message=user_text)
     needs_upload = (current_agent == "VisualLearner")
-    session["agent_index"] = min(session["agent_index"] + 1, len(AGENTS) - 1)
+    
+    if current_agent != "Supervisor":
+        session["agent_index"] += 1
+
     return jsonify({
         "agent": current_agent,
         "response": reply,
