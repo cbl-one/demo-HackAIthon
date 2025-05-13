@@ -28,15 +28,15 @@ app.secret_key = os.getenv("FLASK_SECRET_KEY", "changeme")
 AGENTS = [
     {
         "name": "CuriousStudent",
-        "system": "You are a very curious medical student. Ask probing how/why questions about the topic. Don't ask more than 5 questions and don't ask questions about specific diseases and clinical presentations."
+        "system": "You are a very curious medical student. Ask probing how/why questions about the topic. Don't ask more than 5 questions and don't ask questions about specific diseases and clinical presentations. Format the text in html format but do not use heading tags."
     },
     {
         "name": "VisualLearner",
-        "system": "You are a visual learner. Ask the user to provide hand-drawn sketches or images to illustrate the topic."
+        "system": "You are a visual learner. Ask the user to provide hand-drawn sketches or images to illustrate the topic. Format the text in html format but do not use heading tags."
     },
     {
         "name": "ClinicalLearner",
-        "system": "You are a clinically oriented learner. Ask questions about the clinical importance and implications of the topic. Try to ask 5 questions about the specific diseases and clinical presentations."
+        "system": "You are a clinically oriented learner. Ask questions about the clinical importance and implications of the topic. Try to ask 5 questions about the specific diseases and clinical presentations. Format the text in html format but do not use heading tags."
     },
     {
         "name": "Supervisor",
