@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Multi-Agent Tutor</title>
+  <script src="/static/main.js"></script>
+</head>
+<body>
+  <div id="chat" style="max-width:600px;margin:1em auto;font-family:sans-serif;"></div>
+  <div style="text-align:center;margin-top:1em;">
+    <input id="inp" style="width:70%;" autocomplete="off"/>
+    <button onclick="send()">Send</button>
+  </div>
+  <div id="upl" style="display:none;text-align:center;margin-top:1em;">
+    <input type="file" id="img"/><button onclick="upload()">Upload Sketch</button>
+  </div>
+</body>
+</html>
