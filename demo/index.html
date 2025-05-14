@@ -8,12 +8,12 @@
     <script src="./browser@4"></script>
     <style>
         body {
-          margin: 0px 100px 100px 100px; /* Add margin to the body */
-          font-size: larger;
+            margin: 0;
+            font-size: larger;
         }
 
         .chat-container {
-            width: 100%;
+            width: 90%;
             max-width: 1000px;
             margin: 50px auto;
             padding: 20px;
@@ -23,18 +23,54 @@
             height: auto;
             overflow-y: auto;
         }
-      </style>
+
+        .chat-bubble img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .flex-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: medium;
+            }
+
+            .navbar {
+                text-align: center;
+                font-size: 24px;
+                padding: 10px;
+            }
+
+            .chat-container {
+                width: 95%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            button.btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
-    <div class="navbar bg-primary text-primary-content" style="margin-left: 0; margin-right: 0; margin-bottom: 50px; text-align: center;">
-        <button class="btn btn-ghost text-xl" style="font-size: 40px;;">Static DEMO for HackAIthon</button>
-      </div>
 
-      <button class="btn btn-primary"><a href="https://static.cbl.one">Good</a></button>
-      <button class="btn btn-error"><a href="https://static.cbl.one/bad.html">Bad</a></button>
-      <br><br>
+    <div class="navbar bg-primary text-primary-content" style="margin-bottom: 50px; text-align: center;">
+        <button class="btn btn-ghost text-xl" style="font-size: 40px;">Static DEMO for HackAIthon</button>
+    </div>
+
+    <div class="flex-buttons">
+        <button class="btn btn-primary"><a href="https://static.cbl.one" style="color:white;">Good</a></button>
+        <button class="btn btn-error"><a href="https://static.cbl.one/bad.html" style="color:white;">Bad</a></button>
+    </div>
 
     <div class="chat chat-start">
         <div class="chat-bubble chat-bubble-info">
@@ -43,146 +79,87 @@
         </div>
     </div>
 
-      <div class="chat chat-end">
+    <div class="chat chat-end">
         <div class="chat-bubble chat-bubble-error">
-          <b>Curious Student</b><br>
-            1. How do the intrinsic muscles of the hand contribute to the fine motor control required for tasks like writing or playing musical instruments?
-            <br>
-            2. Why is the arrangement of the tendons and ligaments in the hand so crucial for maintaining both strength and dexterity during movement?
-            <br>
-            3. How do the extrinsic muscles of the forearm interact with the intrinsic muscles of the hand to produce complex movements like grip and pinch?
-            <br>
-            4. Why are the thenar and hypothenar muscle groups anatomically distinct, and how does their separation influence hand function?
-            <br>
-            5. How does the interplay between the palmar and dorsal interossei muscles affect the ability to perform delicate tasks like spreading the fingers or adducting them?
+            <b>Curious Student</b><br>
+            1. How do the intrinsic muscles of the hand contribute to fine motor control for tasks like writing or playing musical instruments?
+            <br>2. Why is the arrangement of tendons and ligaments in the hand so crucial for strength and dexterity?
+            <br>3. How do the extrinsic muscles of the forearm interact with intrinsic hand muscles for grip and pinch?
+            <br>4. Why are the thenar and hypothenar muscle groups anatomically distinct, and how does their separation influence function?
+            <br>5. How does the interplay between palmar and dorsal interossei affect delicate tasks like finger spreading or adduction?
         </div>
-      </div>
+    </div>
 
-      <div class="chat chat-start">
+    <div class="chat chat-start">
         <div class="chat-bubble chat-bubble-info">
             <b>You:</b><br>
-            1. Intrinsic muscles of the hand, like the lumbricals and interossei, provide the fine motor control needed for tasks like writing or playing musical instruments by allowing precise movements of individual fingers, facilitating actions such as finger flexion, extension, and abduction while maintaining the dexterity needed for intricate tasks.
-            <br>2. The arrangement of tendons and ligaments in the hand ensures both strength and dexterity by enabling efficient force transfer for powerful grips (via flexor tendons) and precise control for fine motor tasks (via intrinsic muscles), while ligaments like the flexor retinaculum prevent tendon bowstringing and maintain joint stability during movement.
-            <br>3. The extrinsic muscles of the forearm, such as the flexor digitorum superficialis and extensor digitorum, provide the force needed for basic movements like flexion and extension, while the intrinsic muscles fine-tune these movements for precision, working together to produce complex actions like grip and pinch through coordinated strength and fine control.
-            <br>4. The thenar and hypothenar muscles are anatomically distinct because the thumb and little finger serve highly specialized roles in hand function; the thenar eminence controls thumb opposition, crucial for precision, while the hypothenar eminence helps with pinky movements, contributing to overall grip strength and hand dexterity. Their separation allows for independent, specialized movements.
-            <br>5. The palmar interossei (which adduct the fingers) and the dorsal interossei (which abduct the fingers) work in tandem to control finger positioning during delicate tasks like spreading the fingers or adducting them. This dynamic balance allows for precise movements in tasks that require both fine motor control and stability, such as grasping small objects or making intricate gestures.
+            1. Intrinsic muscles like lumbricals and interossei enable precise individual finger movements for writing or instrument playing.
+            <br>2. Tendons and ligaments ensure both power and precision, while structures like the flexor retinaculum prevent bowstringing.
+            <br>3. Extrinsic forearm muscles supply gross movement; intrinsic muscles fine-tune these for actions like gripping and pinching.
+            <br>4. Thenar and hypothenar groups are distinct for independent thumb and pinky control — vital for grip and dexterity.
+            <br>5. Palmar interossei adduct fingers, dorsal interossei abduct them; together they enable intricate hand maneuvers.
         </div>
     </div>
 
-      <div class="chat chat-end">
+    <div class="chat chat-end">
         <div class="chat-bubble chat-bubble-accent">
-          <b>Visual Learner</b><br>
-          Thank you for the detailed explanations! Since you're discussing the hand's anatomy and functionality, could you provide a hand-drawn sketch or an image to illustrate the following points? Visuals will help clarify the relationships between the intrinsic and extrinsic muscles, as well as the specific roles of the thenar, hypothenar, and interossei muscles. 
-          Here are the elements you might want to include in your sketch:
-          <br>1. The **intrinsic muscles** of the hand (e.g., lumbricals, palmar and dorsal interossei).
-          <br>2. The arrangement of **tendons and ligaments** (e.g., flexor tendons, flexor retinaculum).
-          <br>3. The **extrinsic muscles** originating in the forearm (e.g., flexor digitorum superficialis, extensor digitorum). 
-          <br>4. The **thenar** and **hypothenar eminences** (highlighting their distinct roles).
-          <br>5. The **palmar and dorsal interossei** (showing their functions in finger abduction and adduction). Feel free to upload a simple drawing or diagram that visually represents these structures and their functions.
-        </div>
-      </div>
-
-      <div class="chat chat-start">
-        <div class="chat-bubble chat-bubble-info">
-            <img src="./labelled_hand_image.png" alt="Labelled Hand Image" style="height: 500px;">
+            <b>Visual Learner</b><br>
+            Thank you! Could you provide a labeled sketch showing:
+            <br>1. Intrinsic hand muscles (lumbricals, interossei)
+            <br>2. Tendons and ligaments (flexor tendons, retinaculum)
+            <br>3. Extrinsic forearm muscles (FDS, ED)
+            <br>4. Thenar and hypothenar eminences
+            <br>5. Palmar and dorsal interossei movements
         </div>
     </div>
 
-      <div class="chat chat-end">
+    <div class="chat chat-start">
+        <div class="chat-bubble chat-bubble-info">
+            <img src="./labelled_hand_image.png" alt="Labelled Hand Image">
+        </div>
+    </div>
+
+    <div class="chat chat-end">
         <div class="chat-bubble chat-bubble-warning">
             <b>Clinical Learner</b><br>
-            The image shows an anatomical illustration of the human hand, focusing on the structures like tendons, nerves, muscles, and blood vessels. It is a detailed depiction of the dorsal and palmar aspects, highlighting the functional and clinical relevance of each structure. Below are five clinically-oriented questions related to this image:
-            <br>How does compression of the median nerve in the carpal tunnel (as depicted in this image) affect hand function, and what are the typical clinical presentations of carpal tunnel syndrome?
-            <br>What are the potential consequences of injury to the extensor tendons shown in the image, and how can these injuries be managed clinically?
-            <br>Given the intricate arrangement of blood vessels in the hand, how does vascular compromise (e.g., from trauma or systemic conditions like diabetes) manifest in clinical symptoms, and what diagnostic tests are useful?
-            <br>What role do the intrinsic hand muscles (e.g., lumbricals and interossei) play in fine motor control, and how is their dysfunction assessed during a neurological examination?
-            <br>How can trauma or pathological conditions affecting the flexor tendons (as seen in the palmar aspect) lead to "trigger finger," and what are the treatment options for this condition?
-            <br>The image is an excellent resource for understanding the complex anatomy of the hand and its relevance to common clinical conditions.        
+            The image depicts tendons, nerves, muscles, and vessels in the hand. 
+            Here are clinical questions:
+            <br>- How does carpal tunnel syndrome affect function?
+            <br>- Consequences of extensor tendon injuries?
+            <br>- Diagnosing acute vs chronic vascular compromise?
+            <br>- How to assess intrinsic muscle function?
+            <br>- Management options for trigger finger?
         </div>
-      </div>
+    </div>
 
-      <div class="chat chat-start">
+    <div class="chat chat-start">
         <div class="chat-bubble chat-bubble-info">
             <b>You:</b><br>
-            1. Compression of the median nerve in the carpal tunnel leads to numbness, tingling, and weakness in the thumb, index, and middle fingers, often causing difficulty with gripping and performing fine motor tasks, with Tinel’s sign and Phalen’s test being key clinical diagnostic tools for carpal tunnel syndrome.
-            <br>2. Injury to extensor tendons can result in conditions like mallet finger or boutonniere deformity, leading to inability to extend the affected finger; splinting or surgical repair is typically required based on the severity of the injury.
-            <br>3. Vascular compromise in the hand, due to trauma or conditions like diabetes, results in pain, pallor, and coolness of the hand, with Doppler ultrasound and angiography being valuable diagnostic tests for assessing blood flow and identifying blockages or ischemia.
-            <br>4. Intrinsic hand muscles (lumbricals and interossei) are essential for fine motor control, enabling movements like finger flexion, extension, and precise positioning, and their dysfunction is assessed through neurological examination using tests like manual muscle testing and sensory evaluations.
-            <br>5. Trauma or pathological conditions affecting the flexor tendons can cause trigger finger, where the tendon becomes stuck or locked in a flexed position, and treatment options include splinting, corticosteroid injections, or surgical release if conservative measures fail.    
+            1. Median nerve compression causes numbness, weakness in thumb, index, middle fingers; Tinel’s & Phalen’s tests help diagnosis.
+            <br>2. Extensor tendon injuries lead to deformities like mallet finger, managed by splinting or surgery.
+            <br>3. Acute ischemia causes pain, pallor, pulselessness — requires urgent care. Chronic ischemia presents with gradual symptoms.
+            <br>4. Test intrinsic muscle function with manual testing and sensory checks.
+            <br>5. Trigger finger treated with splinting, steroids, or surgery if persistent.
         </div>
-        </div>
+    </div>
 
-        <div class="chat chat-end">
-            <div class="chat-bubble chat-bubble-warning">
-                <b>Clinical Learner</b><br>
-                    - What are the potential complications of untreated carpal tunnel syndrome, and how might these affect a patient's ability to perform daily activities or occupational tasks?
-                    <br>- How can the severity of extensor tendon injuries, such as mallet finger or boutonniere deformity, be clinically graded to determine whether surgical intervention is necessary versus conservative management like splinting?
-                    <br>- In cases of vascular compromise in the hand, how can clinicians differentiate between acute ischemia requiring immediate intervention and chronic vascular insufficiency requiring long-term management? What are the clinical signs that point to urgent care needs?
-                    <br>- What neurological conditions or injuries might impair the function of intrinsic hand muscles, and how can clinicians use manual muscle testing and sensory evaluations to localize and identify the underlying cause?
-                    <br>- For patients with trigger finger, how do corticosteroid injections compare to surgical release in terms of efficacy, recurrence rates, and risk of complications? When is surgical intervention typically recommended?
-            </div>
-          </div>
-
-        <div class="chat chat-start">
-            <div class="chat-bubble chat-bubble-info">
-                <b>You:</b><br>
-                1. Untreated carpal tunnel syndrome can lead to muscle atrophy, permanent nerve damage, and significant loss of grip strength, affecting the ability to perform daily activities or occupational tasks, particularly those requiring fine motor skills.
-                <br>2. Extensor tendon injuries like mallet finger or boutonniere deformity are graded by severity of tendon disruption and joint involvement, with conservative management (splinting) being preferred for mild cases, while more severe cases may require surgical intervention.
-                <br>3. Acute ischemia requires immediate intervention (e.g., revascularization), presenting with signs like severe pain, pallor, and absent pulses, while chronic vascular insufficiency involves persistent coldness, discoloration, and slower symptoms, managed over time with lifestyle changes or surgery.
-                <br>4. Neurological conditions like peripheral neuropathy, ulnar nerve lesions, or C6-C8 radiculopathy can impair intrinsic hand muscles, and manual muscle testing and sensory evaluations help identify nerve involvement and localize the injury.
-                <br>5. Corticosteroid injections for trigger finger offer short-term relief, but surgical release is often more effective for long-term resolution, especially in cases with recurrence or resistance to injections, and surgery is recommended when conservative measures fail.
-            </div>
-        </div>
-
-        <div class="chat-container">
-            <b>Supervisor:</b>
-        
-            <b>Educational Performance Assessment Report</b>
-            <br>
-            <br>
-            <b>Overview of the User’s Explanation</b>
-            <br>
-            <p>The user provided detailed explanations across five distinct medical topics related to musculoskeletal and neurological conditions. Each explanation was concise, informative, and relevant to the respective medical issue, demonstrating a good depth of knowledge and clarity in addressing complex concepts.</p>
-            <br>
-            <b>What Was Explained Well</b>
-            <ul>
-                <li>
-                    <p>1. Carpal Tunnel Syndrome:</p>
-                    <p>The user effectively highlighted the potential consequences of untreated carpal tunnel syndrome, including muscle atrophy, permanent nerve damage, and loss of grip strength. The explanation was thorough, covering both the functional and occupational impacts of the condition.</p>
-                </li>
-                <li>
-                    <p>2. Extensor Tendon Injuries:</p>
-                    <p>The user provided a clear grading system for tendon injuries based on severity and joint involvement. The differentiation between conservative management (splinting) for mild cases and surgical intervention for severe cases was well-articulated and clinically relevant.</p>
-                </li>
-                <li>
-                    <p>3. Acute and Chronic Ischemia:</p>
-                    <p>The explanation of acute ischemia versus chronic vascular insufficiency was detailed and accurate. The description of the signs, symptoms, and management approaches for both conditions demonstrated a solid understanding of vascular pathology.</p>
-                </li>
-                <li>
-                    <p>4. Neurological Conditions Affecting Hand Muscles:</p>
-                    <p>The user showed a good grasp of how neurological conditions like peripheral neuropathy, ulnar nerve lesions, and radiculopathy can affect intrinsic hand muscles. The emphasis on manual muscle testing and sensory evaluations to localize nerve involvement was a strong point.</p>
-                </li>
-                <li>
-                    <p>5. Trigger Finger Management:</p>
-                    <p>The user provided a balanced view of corticosteroid injections versus surgical release for managing trigger finger. The distinction between short-term relief and long-term resolution, as well as the criteria for recommending surgery, was well-explained.</p>
-                </li>
-            </ul>
-            <br>
-            <b>Areas That Need Improvement</b><br>
-            <u>No further learning is necessary for this topic.</u><br>
-            <br>
-            <b>Suggested Topics for Further Study</b>
-            <ul>
-                <li>Advanced diagnostic techniques for musculoskeletal and neurological conditions (e.g., electromyography, ultrasound imaging).</li>
-                <li>Emerging treatments and technologies for carpal tunnel syndrome and other nerve-related disorders.</li>
-                <li>Rehabilitation strategies and exercises for post-surgical recovery in tendon and nerve injuries.</li>
-                <li>Comparative analysis of different pharmacological approaches for vascular insufficiency.</li>
-                <li>Biomechanical studies on the impact of nerve and tendon injuries on hand function.</li>
-            </ul>
-            <br>
-            <b>Conclusion</b>
-            <p>The user demonstrated a strong depth of knowledge in explaining the given medical concepts. Each topic was addressed with clarity and precision, showcasing a solid understanding of the conditions, their symptoms, and management strategies. While no immediate improvements are necessary, further exploration of related advanced topics could enhance the user’s expertise in this domain.</p>
-        </div>        
+    <div class="chat-container">
+        <b>Supervisor:</b>
+        <br><b>Educational Performance Assessment Report</b>
+        <p>User provided clear, clinically relevant explanations on hand anatomy and pathology.</p>
+        <b>Key strengths:</b>
+        <ul>
+            <li>Excellent clinical reasoning for carpal tunnel syndrome and extensor tendon injuries</li>
+            <li>Good differentiation of acute vs chronic ischemia</li>
+            <li>Appropriate management approaches for trigger finger</li>
+        </ul>
+        <b>Suggested Topics:</b>
+        <ul>
+            <li>Advanced diagnostics (EMG, imaging)</li>
+            <li>Emerging treatments in nerve entrapment</li>
+            <li>Hand rehab post-surgery</li>
+        </ul>
+    </div>
 
 </body>
 </html>
