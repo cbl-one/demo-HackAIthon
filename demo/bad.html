@@ -1,190 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo HackAIthon</title>
-    <link href="./daisyui@5.css" rel="stylesheet" type="text/css" />
-    <script src="./browser@4"></script>
-    <style>
-        body {
-          margin: 0px 100px 100px 100px; /* Add margin to the body */
-          font-size: larger;
-        }
 
-        .chat-container {
-            width: 100%;
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            height: auto;
-            overflow-y: auto;
-        }
-      </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo HackAIthon</title>
+  <link href="./daisyui@5.css" rel="stylesheet" type="text/css" />
+  <script src="./browser@4"></script>
+  <style>
+    body {
+      margin: 0 100px 100px 100px;
+      font-size: larger;
+    }
+
+    .chat-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      height: auto;
+      overflow-y: auto;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        margin: 10px;
+        font-size: medium;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    
-    <div class="navbar bg-primary text-primary-content" style="margin-left: 0; margin-right: 0; margin-bottom: 50px; text-align: center;">
-        <button class="btn btn-ghost text-xl" style="font-size: 40px;;">Static DEMO for HackAIthon</button>
-      </div>
 
-      <button class="btn btn-primary"><a href="https://static.cbl.one">Good</a></button>
-      <button class="btn btn-error"><a href="https://static.cbl.one/bad.html">Bad</a></button>
-      <br><br>
-    <div class="chat chat-start">
-        <div class="chat-bubble chat-bubble-info">
-            <b>You:</b><br>
-            The topic that I would like to discuss is: muscles of the hand.
-        </div>
+  <div class="navbar bg-primary text-primary-content" style="margin: 0 0 50px 0; text-align: center;">
+    <button class="btn btn-ghost text-xl" style="font-size: 40px;">Static DEMO for HackAIthon</button>
+  </div>
+
+  <button class="btn btn-primary"><a href="https://static.cbl.one">Good</a></button>
+  <button class="btn btn-error"><a href="https://static.cbl.one/bad.html">Bad</a></button>
+  <br><br>
+
+  <div class="chat chat-start">
+    <div class="chat-bubble chat-bubble-info">
+      <b>You:</b><br>
+      The topic that I would like to discuss is: muscles of the hand.
     </div>
+  </div>
 
-      <div class="chat chat-end">
-        <div class="chat-bubble chat-bubble-error">
-          <b>Curious Student</b><br>
-          Why are the intrinsic muscles of the hand divided into specific compartments, and how does this anatomical organization contribute to hand function?
-            <br>
-          How do the different types of muscle fibers in hand muscles influence their ability to perform precise, fine motor movements versus sustained gripping actions?
-            <br>
-          Why is the opposition of the thumb considered such a critical function in human hand anatomy, and how do the thenar muscles facilitate this movement?
-          <br>
-          How do the lumbrical muscles, which attach to tendons rather than bones, contribute uniquely to the coordination of finger flexion and extension?
-          <br>
-          Why is there a difference in the innervation of the intrinsic muscles of the hand, with some being supplied by the median nerve and others by the ulnar nerve, and how does this affect motor control?
-        </div>
-      </div>
-
-      <div class="chat chat-start">
-        <div class="chat-bubble chat-bubble-info">
-            <b>You:</b><br>
-            1. the muscles of the hand have fine motor movements.
-            <br>2. they are required for gripping movements.
-            <br>3. the extrinsic muscles provide the crude movements while the intrinsic ones provide the fine motor control.
-            <br>4. they are smaller and used more extensively and are more delicate so they are more prone to injury.
-            <br>5. Different nerves are involved in the innervation of different muscles so if one is damaged, only those muscles will be damaged.
-        </div>
+  <div class="chat chat-end">
+    <div class="chat-bubble chat-bubble-error">
+      <b>Curious Student</b><br>
+      Why are the intrinsic muscles of the hand divided into specific compartments, and how does this anatomical
+      organization contribute to hand function?
+      <br>How do the different types of muscle fibers in hand muscles influence their ability to perform precise, fine
+      motor movements versus sustained gripping actions?
+      <br>Why is the opposition of the thumb considered such a critical function in human hand anatomy, and how do the
+      thenar muscles facilitate this movement?
+      <br>How do the lumbrical muscles, which attach to tendons rather than bones, contribute uniquely to the
+      coordination of finger flexion and extension?
+      <br>Why is there a difference in the innervation of the intrinsic muscles of the hand, with some being supplied by
+      the median nerve and others by the ulnar nerve, and how does this affect motor control?
     </div>
+  </div>
 
-      <div class="chat chat-end">
-        <div class="chat-bubble chat-bubble-accent">
-          <b>Visual Learner</b><br>
-          Thank you for the detailed explanations! Since you're discussing the hand's anatomy and functionality, could you provide a hand-drawn sketch or an image to illustrate the following points? Visuals will help clarify the relationships between the intrinsic and extrinsic muscles, as well as the specific roles of the thenar, hypothenar, and interossei muscles. 
-          Here are the elements you might want to include in your sketch:
-          <br>1. The **intrinsic muscles** of the hand (e.g., lumbricals, palmar and dorsal interossei).
-          <br>2. The arrangement of **tendons and ligaments** (e.g., flexor tendons, flexor retinaculum).
-          <br>3. The **extrinsic muscles** originating in the forearm (e.g., flexor digitorum superficialis, extensor digitorum). 
-          <br>4. The **thenar** and **hypothenar eminences** (highlighting their distinct roles).
-          <br>5. The **palmar and dorsal interossei** (showing their functions in finger abduction and adduction). Feel free to upload a simple drawing or diagram that visually represents these structures and their functions.
-        </div>
-      </div>
-
-      <div class="chat chat-start">
-        <div class="chat-bubble chat-bubble-info">
-            <img src="./labelled_hand_image.png" alt="Labelled Hand Image" style="height: 500px;">
-        </div>
+  <div class="chat chat-start">
+    <div class="chat-bubble chat-bubble-info">
+      <b>You:</b><br>
+      1. the muscles of the hand have fine motor movements.
+      <br>2. they are required for gripping movements.
+      <br>3. the extrinsic muscles provide the crude movements while the intrinsic ones provide the fine motor control.
+      <br>4. they are smaller and used more extensively and are more delicate so they are more prone to injury.
+      <br>5. Different nerves are involved in the innervation of different muscles so if one is damaged, only those
+      muscles will be damaged.
     </div>
+  </div>
 
-      <div class="chat chat-end">
-        <div class="chat-bubble chat-bubble-warning">
-            <b>Clinical Learner</b><br>
-            1. the median nerve controls muscles in the forearm and the lateral part of the hand so muscle movement and sensation there would be affected.
-            <br>2 an MRI would help in the differentiation.
-            <br>3. I would ask the person to flex their hand in resistance and would also check the sensory sensations in the medial part of the hand and the arm.
-            <br>4. extensive use of tools can affect the muscles of the hand and also direct trauma can also affect the muscles of the hand.
-            <br>5.the hand would appear cyanotic and cold. Prolonged hypoxia may lead to cell death and necrosis.
-        </div>
-      </div>
+  <div class="chat chat-end">
+    <div class="chat-bubble chat-bubble-accent">
+      <b>Visual Learner</b><br>
+      Thank you for the detailed explanations! Since you're discussing the hand's anatomy and functionality, could you
+      provide a hand-drawn sketch or an image to illustrate the following points?
+      <br>1. The <b>intrinsic muscles</b> of the hand (e.g., lumbricals, palmar and dorsal interossei).
+      <br>2. The arrangement of <b>tendons and ligaments</b> (e.g., flexor tendons, flexor retinaculum).
+      <br>3. The <b>extrinsic muscles</b> originating in the forearm.
+      <br>4. The <b>thenar</b> and <b>hypothenar eminences</b>.
+      <br>5. The <b>palmar and dorsal interossei</b> and their functions.
+    </div>
+  </div>
 
-      <div class="chat chat-start">
-        <div class="chat-bubble chat-bubble-info">
-            <b>You:</b><br>
-                1. the median nerve controls muscles in the forearm and the lateral part of the hand so muscle movement and sensation there would be affected.
-                <br>2 an MRI would help in the differentiation.
-                <br>3. I would ask the person to flex their hand in resistance and would also check the sensory sensations in the medial part of the hand and the arm.
-                <br>4. extensive use of tools can affect the muscles of the hand and also direct trauma can also affect the muscles of the hand.
-                <br>5.the hand would appear cyanotic and cold. Prolonged hypoxia may lead to cell death and necrosis.    
-        </div>
-        </div>
+  <div class="chat chat-start">
+    <div class="chat-bubble chat-bubble-info">
+      <img src="./labelled_hand_image.png" alt="Labelled Hand Image">
+    </div>
+  </div>
 
-        <div class="chat chat-end">
-            <div class="chat-bubble chat-bubble-warning">
-                <b>Clinical Learner</b><br>
-                    - What are the potential complications of untreated carpal tunnel syndrome, and how might these affect a patient's ability to perform daily activities or occupational tasks?
-                    <br>- How can the severity of extensor tendon injuries, such as mallet finger or boutonniere deformity, be clinically graded to determine whether surgical intervention is necessary versus conservative management like splinting?
-                    <br>- In cases of vascular compromise in the hand, how can clinicians differentiate between acute ischemia requiring immediate intervention and chronic vascular insufficiency requiring long-term management? What are the clinical signs that point to urgent care needs?
-                    <br>- What neurological conditions or injuries might impair the function of intrinsic hand muscles, and how can clinicians use manual muscle testing and sensory evaluations to localize and identify the underlying cause?
-                    <br>- For patients with trigger finger, how do corticosteroid injections compare to surgical release in terms of efficacy, recurrence rates, and risk of complications? When is surgical intervention typically recommended?
-            </div>
-          </div>
+  <div class="chat chat-start">
+    <div class="chat-bubble chat-bubble-info">
+      <video controls>
+        <source src="./hand_muscle_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
 
-          <div class="chat chat-start">
-            <div class="chat-bubble chat-bubble-info">
-                <b>You:</b><br>
-                    1. the median nerve controls muscles in the forearm and the lateral part of the hand so muscle movement and sensation there would be affected.
-                    <br>2 an MRI would help in the differentiation.
-                    <br>3. I would ask the person to flex their hand in resistance and would also check the sensory sensations in the medial part of the hand and the arm.
-                    <br>4. extensive use of tools can affect the muscles of the hand and also direct trauma can also affect the muscles of the hand.
-                    <br>5.the hand would appear cyanotic and cold. Prolonged hypoxia may lead to cell death and necrosis.    
-            </div>
-            </div>
+  <div class="chat chat-end">
+    <div class="chat-bubble chat-bubble-warning">
+      <b>Clinical Learner</b><br>
+      1. The median nerve controls muscles in the forearm and lateral part of the hand so muscle movement and sensation
+      there would be affected.
+      <br>2. An MRI would help in the differentiation.
+      <br>3. I would ask the person to flex their hand in resistance and check the sensory sensations in the medial part
+      of the hand and the arm.
+      <br>4. Extensive use of tools or trauma can affect hand muscles.
+      <br>5. The hand would appear cyanotic and cold; prolonged hypoxia may lead to necrosis.
+    </div>
+  </div>
 
-        <div class="chat-container">
-            <b>Supervisor:</b>
-            <br>
-            <p>Report on User's Explanation</p>
-            <br>
-            <b>What Was Explained Well</b>
-<p>
-  The user has provided a reasonably accurate explanation on several points related to muscle movement, diagnostic methods, physical examination techniques, and potential causes of hand-related issues. Below are the strengths in their explanation:
-</p>
-<ul>
-  <li>
-    <p>1. Median nerve function:</p> The user correctly identified that the median nerve controls muscles in the forearm and the lateral part of the hand. They also noted that muscle movement and sensation would be affected, which is accurate in cases of median nerve injury.
-  </li>
-  <li>
-    <p>2. Use of MRI for differentiation:</p> The suggestion of MRI as a diagnostic tool for differentiation is appropriate, as MRI imaging can provide detailed insights into nerve and muscle conditions.
-  </li>
-  <li>
-    <p>3. Physical examination techniques:</p> The user described a reliable method for assessing potential median nerve or hand-related issues, including resistance testing during hand flexion and checking sensory sensations in specific areas of the hand and arm.
-  </li>
-  <li>
-    <p>4. Impact of external factors:</p> The user correctly identified that extensive use of tools and direct trauma could lead to muscle issues in the hand. This demonstrates an understanding of common causes of hand disorders or injuries.
-  </li>
-  <li>
-    <p>5. Description of cyanotic appearance and hypoxia effects:</p> The explanation regarding the hand appearing cyanotic and cold, along with the potential for prolonged hypoxia leading to cell death and necrosis, is accurate and well-articulated.
-  </li>
-</ul>
-<br>
-<b>Areas for Improvement</b><br>
-<u>
-<p>
-  While the user demonstrated a good understanding of the topic, there are some areas where additional clarification or depth could enhance their explanation:
-</p>
-<ul>
-  <li>
-    <p>1. Clarification of nerve testing:</p> When discussing sensory sensations, the user mentioned the "medial part of the hand and the arm." However, the median nerve primarily affects the lateral part of the hand (thumb, index, middle finger, and lateral half of the ring finger). Sensory testing for the medial part of the hand and arm would correspond more to the ulnar or other nerves. This distinction should be clarified to avoid confusion.
-  </li>
-  <li>
-    <p>2. Detail on MRI differentiation:</p> While mentioning MRI as a diagnostic tool is correct, the user could elaborate on what specific differentiations are being referred to (e.g., nerve compression, muscle damage, or structural abnormalities). This would add depth to their explanation.
-  </li>
-  <li>
-    <p>3. Causes of hand muscle issues:</p> The user noted extensive tool use and trauma as causes of muscle problems, but they could further expand on other common causes, such as repetitive stress injuries, systemic conditions like diabetes, or vascular issues affecting the hand.
-  </li>
-</ul>
-</u>
-<br>
-<b>Suggested Topics for Further Study</b>
-<p>To deepen their understanding, the user may benefit from studying the following topics:</p>
-<ul>
-  <li>Anatomy and physiology of the median nerve, including sensory and motor pathways.</li>
-  <li>Detailed physical examination techniques for diagnosing nerve injuries and differentiating between median, ulnar, and radial nerve functions.</li>
-  <li>Imaging modalities for nerve damage (e.g., MRI, ultrasound, and electromyography) and their specific applications.</li>
-  <li>Common causes and pathophysiology of hand-related conditions, including carpal tunnel syndrome, repetitive strain injuries, and vascular issues.</li>
-</ul>
+  <div class="chat-container">
+    <b>Supervisor:</b>
+    <br>
+    <p>Report on User's Explanation</p>
+    <br>
+    <b>What Was Explained Well</b>
+    <ul>
+      <li>1. Correctly identified median nerve function affecting forearm and lateral hand muscles.</li>
+      <li>2. Appropriately suggested MRI for differentiation.</li>
+      <li>3. Described reliable physical examination techniques.</li>
+      <li>4. Recognized trauma and repetitive tool use as risk factors.</li>
+      <li>5. Accurately described cyanosis and potential for tissue necrosis in hypoxia.</li>
+    </ul>
+    <br>
+    <b>Areas for Improvement</b>
+    <ul>
+      <li>1. Clarify that the median nerve affects the lateral, not medial, hand.</li>
+      <li>2. Elaborate on MRI's role (nerve compression, structural damage).</li>
+      <li>3. Expand causes of hand issues: systemic disease, vascular issues.</li>
+    </ul>
+    <br>
+    <b>Suggested Topics for Further Study</b>
+    <ul>
+      <li>Anatomy of the median nerve and motor/sensory pathways.</li>
+      <li>Physical exam techniques for differentiating nerve injuries.</li>
+      <li>Imaging modalities for nerve and muscle pathology.</li>
+      <li>Common causes and pathophysiology of hand conditions.</li>
+    </ul>
+  </div>
 
-        </div>
 </body>
+
 </html>
